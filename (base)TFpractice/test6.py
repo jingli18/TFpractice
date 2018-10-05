@@ -39,6 +39,7 @@ with tf.name_scope('trian'):
 init = tf.initialize_all_variables()
 sess = tf.Session()
 
+#tensorboard
 writer = tf.summary.FileWriter("logs/", sess.graph)
 sess.run(init)
 
